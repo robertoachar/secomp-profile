@@ -1,0 +1,276 @@
+/*
+  Blue: #186FAF / #0F609B
+  Blue Vivid: #0552B5 / #03449E
+  Cyan: #14919B / #0E7C86
+  Cyan Vivid: #0FB5BA / #099AA4
+  Green: #2F8132 / #207227
+  Green Vivid: #0F8613 / #0E7817
+  Pink: #AD2167 / #9B1B5A
+  Pink Vidid: #BC0A6F / #A30664
+  Purple: #51279B / #421987
+  Purple Vivid: #7A0ECC / #690CB0
+  Red: #A61B1B / #911111
+  Red Vivid: #CF1124 / #AB091E
+  Teal: #199473 / #147D64
+  Teal Vivid: #079A82 / #048271
+*/
+
+:root {
+  --black: #333;
+  --grey-dark: #555;
+  --grey: #e5e5e5;
+  --white: #fff;
+  --primary: #199473;
+  --primary-dark: #03449e;
+  --shadow: 0 3px 6px hsla(0, 0%, 0%, 0.15), 0 2px 4px hsla(0, 0%, 0%, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--grey);
+  color: var(--black);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  color: var(--grey-dark);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  background: url(hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.profile {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  margin-top: -250px;
+}
+
+.profile-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.profile-avatar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 5rem;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  max-width: 12rem;
+}
+
+.profile-name {
+  color: var(--primary);
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.profile-career {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.profile-info {
+  padding: 2.5rem;
+  padding-left: 0;
+}
+
+.profile-about {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.profile-summary {
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.profile-data {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.profile-label {
+  display: inline-block;
+  font-weight: 700;
+  width: 5rem;
+}
+
+.profile-social {
+  background-color: var(--primary);
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-link {
+  display: block;
+  color: var(--white);
+  padding: 1rem;
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background: var(--grey-dark);
+  background-image: linear-gradient(
+    to right,
+    var(--grey),
+    var(--grey-dark),
+    var(--grey)
+  );
+}
+
+.section {
+  margin: 3rem 0;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-summary {
+  margin-bottom: 1rem;
+}
+
+.section-year {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.skill {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skill-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.skill-item {
+  margin-bottom: 0.5rem;
+}
+
+.projects {
+  display: grid;
+  margin-top: 2rem;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project {
+  background-color: var(--white);
+  border-radius: 0.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info {
+  flex: 1;
+  padding: 1rem;
+}
+
+.project-name {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.project-description {
+  font-size: 0.875rem;
+}
+
+.project-link {
+  background-color: var(--primary);
+  color: var(--white);
+  display: block;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+  justify-self: end;
+}
+
+.project-link:hover {
+  background-color: var(--primary-dark);
+}
+
+.footer {
+  background-color: var(--primary);
+  padding: 3rem;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
