@@ -4,6 +4,7 @@
   "description": "Profile lab.",
   "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
     "start": "parcel src/index.html --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
